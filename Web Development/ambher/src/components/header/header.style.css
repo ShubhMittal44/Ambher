@@ -1,11 +1,19 @@
 /* The entire top portion of the landing page */
 .heading-content {
-    height: 65vh;
+    height: 60vh;
     width: 100vw;
     background: url('../../assets/images/img-cover.png');
     background-position: top;
     background-size: cover;
     color: white;
+}
+/* The topmost row (virtual) */
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 /* The 2 icons on the right */
 .right-info{
@@ -33,7 +41,6 @@
     font-size: 4vw;
     padding: 10px;
     margin: 10px;
-    
 }
 /* description div */
 .description {

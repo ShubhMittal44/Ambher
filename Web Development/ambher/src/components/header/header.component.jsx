@@ -2,17 +2,22 @@ import React from "react";
 import "./header.style.css";
 import PersonIcon from "@material-ui/icons/Person";
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic";
-import { Searchbox } from '../searchbox/searchbox.component'
+import { Searchbox } from "../searchbox/searchbox.component";
+import { Hamburger } from "../hamburger/hamburger.component";
 
 export const Header = () => (
   <div className="heading-content">
-    <div className="blurout"></div>
-    <div className="right-info">
-      <div className="icon-box">
-        <PersonIcon style={{ fontSize: 40 }} />
+    <div className="top-bar">
+      <div className="menu-ham">
+        <Hamburger />
       </div>
-      <div className="icon-box">
-        <HeadsetMicIcon style={{ fontSize: 40 }} />
+      <div className="right-info">
+        <div className="icon-box">
+          <PersonIcon style={{ fontSize: 40 }} />
+        </div>
+        <div className="icon-box">
+          <HeadsetMicIcon style={{ fontSize: 40 }} />
+        </div>
       </div>
     </div>
 
