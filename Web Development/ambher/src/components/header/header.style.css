@@ -1,0 +1,44 @@
+/* The entire top portion of the landing page */
+.heading-content {
+    height: 65vh;
+    width: 100vw;
+    background: url('../../assets/images/img-cover.png');
+    background-position: top;
+    background-size: cover;
+    color: white;
+}
+/* The 2 icons on the right */
+.right-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px 40px;
+}
+/* this div encloses the 2 icons on the right */
+.icon-box {
+    padding: 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+/* containing div for the company name and the description. */
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Company name div */
+.ambher {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 4vw;
+    padding: 10px;
+    margin: 10px;
+    
+}
+/* description div */
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+    max-width: 60vw;
+}
