@@ -36,6 +36,7 @@
 .featuredSection {
   width: 80vw;
   margin: auto;
+  margin-bottom: 70px;
 }
 
 .featuredSection .sectionTitle {

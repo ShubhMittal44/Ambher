@@ -1,0 +1,80 @@
+.targetAudience {
+  width: 80vw;
+  margin: auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 4px;
+  overflow: hidden;
+}
+
+.column div {
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 4px 0px;
+  border-radius: 10px;
+}
+
+.eventGathering,
+.collegeFest,
+.traditionalWear {
+  position: relative;
+  overflow: hidden;
+}
+
+.column div img {
+  filter: brightness(0.3);
+  z-index: -20;
+  transition: 0.4s ease;
+}
+
+.columnTitle {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  z-index: 20;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  overflow: hidden;
+  padding: 4px 0px;
+}
+
+@media (max-width: 2080px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .columnTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .columnTitle {
+    font-size: 1rem;
+  }
+}
