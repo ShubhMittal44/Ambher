@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductRow from './ProductRow'
 import '../Featured Products/Featured.css'
+import PrimaryBtn from '../PrimaryBtn'
 
 const Featured = (props) => {
   let noOfRows = []
@@ -11,6 +12,7 @@ const Featured = (props) => {
     <div className="featuredSection">
       <h1 className="sectionTitle">{props.title}</h1>
       {noOfRows}
+      <PrimaryBtn text="View More" />
     </div>
   )
 }
