@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductRow from './ProductRow'
 import '../Featured Products/Featured.css'
-import PrimaryBtn from '../PrimaryBtn'
+import PrimaryBtn from '../Primary Button/PrimaryBtn'
 
 const Featured = (props) => {
   let noOfRows = []

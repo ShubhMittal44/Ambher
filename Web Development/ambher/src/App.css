@@ -8,18 +8,3 @@
 .App {
   text-align: center;
 }
-
-.primaryBtn {
-  background-color: #ffc900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  height: 75px;
-  margin: 20px auto;
-}
-
-.primaryBtn h1 {
-  font-size: 25px;
-  font-weight: 500;
-}
