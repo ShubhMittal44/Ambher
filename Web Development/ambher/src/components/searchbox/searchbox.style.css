@@ -3,8 +3,9 @@
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: -1;
     top: 33%;
-    transform: translate(0%, -65%);
+    transform: translate(0%, 50%);
     /* border: 1px solid red; */
 }
 /* Container div for 3 elements */
@@ -58,6 +59,8 @@ button:focus {
 
 /* ***************************************** */
 /* Media Queries */
-/* @media screen (max-width: 1366px) {
-
-} */
+@media all and (max-width: 1366px) {
+    input[type='text'] {
+        padding: 10px;
+    }
+}
