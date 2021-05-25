@@ -1,9 +1,9 @@
 import React from "react";
 import "./header.style.css";
-import PersonIcon from "@material-ui/icons/Person";
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic";
 import { Searchbox } from "../searchbox/searchbox.component";
 import { Hamburger } from "../hamburger/hamburger.component";
+import { Usericon } from "../user-auth/user.component";
 
 export const Header = () => (
   <div className="heading-content">
@@ -13,10 +13,10 @@ export const Header = () => (
       </div>
       <div className="right-info">
         <div className="icon-box">
-          <PersonIcon style={{ fontSize: 40 }} />
+          <Usericon />
         </div>
         <div className="icon-box">
-          <HeadsetMicIcon style={{ fontSize: 40 }} />
+          <a href="#"><HeadsetMicIcon style={{ fontSize: 40 }} /></a>
         </div>
       </div>
     </div>

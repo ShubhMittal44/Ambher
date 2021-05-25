@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    min-width: 300px;
+    margin: 10px;
 }
 .search-icon {
     cursor: unset;
@@ -27,7 +27,6 @@ input[type='text'] {
     padding: 1vw 5px;
     border: none;
     width: 30vw;
-    min-width: 200px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -62,5 +61,20 @@ button:focus {
 @media all and (max-width: 1366px) {
     input[type='text'] {
         padding: 10px;
+    }
+}
+
+@media all and (max-width:425px) {
+    .icon-box {
+        padding: 5px;
+        margin: 5px;
+    }
+    input[type='text'] {
+        /* padding: 0px; */
+        font-size: 17px;
+    }
+    button {
+        padding: 15px 5px;
+        font-size: 17px;
     }
 }

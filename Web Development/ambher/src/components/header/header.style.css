@@ -51,7 +51,15 @@
     line-height: 1.75;
     max-width: 60vw;
 }
-
+a {
+    color: unset;
+}
+a:active {
+    color: unset;
+}
+a:visited {
+    color: unset;
+}
 /* Media Queries */
 @media all and (max-width:1336px) {
     .ambher {
@@ -60,5 +68,10 @@
     .description {
         font-size: 15px;
         line-height: 1.2;
+    }
+}
+@media all and (max-width:425px) {
+    .right-info {
+        padding: 10px;
     }
 }

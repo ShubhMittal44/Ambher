@@ -1,0 +1,26 @@
+#right-pane {
+    
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    right: -400px;
+    cursor: default;
+    background: whitesmoke;
+    transition: 0.5s all ease-in-out;
+}
+/* div containing the cross */
+#right-pane-top {
+    display: flex;
+    justify-content: flex-end;
+}
+#cross {
+    padding: 5px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+/* Animation of the right pane */
+.right-slide {
+    transform: translate(-400px, 0%);
+}

@@ -6,7 +6,6 @@ export const Hamburger = () => (
   <div
     className="outer-ham"
     onClick={() => {
-      console.log(Math.random());
       document.getElementById("1").classList.toggle("rot-down");
       document.getElementById("3").classList.toggle("rot-up");
       document.getElementById("2").classList.toggle("slide");

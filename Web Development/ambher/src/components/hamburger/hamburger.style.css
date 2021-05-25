@@ -40,7 +40,6 @@
     position: absolute;
     top: 0%;
     left: -400px;
-    transition-delay: 0.3s;
     transition: 0.8s all ease-in-out;
 }
 .sidebar-slide {
