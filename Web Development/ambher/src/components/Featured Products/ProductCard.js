@@ -7,7 +7,11 @@ const FeaturedCard = ({ cardTitle, cardPrice }) => {
     <div className="productCard">
       <div
         className="productImage"
-        style={{ backgroundImage: `url(${productImage})` }}
+        style={{
+          backgroundImage: `url(${productImage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+        }}
       />
       {/* <img className="productImage" src={productImage} /> */}
       <h1>{cardTitle}</h1>

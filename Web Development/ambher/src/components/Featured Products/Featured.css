@@ -7,6 +7,7 @@
   max-width: 20%;
   border-radius: 10px;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
 }
 
 .productCard:hover {
@@ -54,7 +55,7 @@
   border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .productCard {
     flex: 40%;
     max-width: 40%;
@@ -64,6 +65,6 @@
 @media (max-width: 600px) {
   .productCard {
     flex: 100%;
-    max-width: 100%;
+    max-width: 80%;
   }
 }
