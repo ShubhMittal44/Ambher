@@ -2,6 +2,7 @@ import React from 'react'
 import ProductRow from './ProductRow'
 import '../Featured Products/Featured.css'
 import PrimaryBtn from '../Primary Button/PrimaryBtn'
+import CartModal from '../Add to cart modal/CartModal'
 
 const Featured = (props) => {
   let noOfRows = []
@@ -13,6 +14,7 @@ const Featured = (props) => {
       <h1 className="sectionTitle">{props.title}</h1>
       {noOfRows}
       <PrimaryBtn text="View More" />
+      <CartModal />
     </div>
   )
 }

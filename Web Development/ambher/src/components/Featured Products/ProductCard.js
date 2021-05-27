@@ -15,7 +15,7 @@ const FeaturedCard = ({ cardTitle, cardPrice }) => {
       />
       {/* <img className="productImage" src={productImage} /> */}
       <h1>{cardTitle}</h1>
-      <h3>Rs {cardPrice}</h3>
+      <h3>Rs{cardPrice}</h3>
     </div>
   )
 }
