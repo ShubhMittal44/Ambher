@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .productCard {
     flex: 100%;
     max-width: 80%;

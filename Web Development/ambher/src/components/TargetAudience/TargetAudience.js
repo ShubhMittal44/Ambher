@@ -28,7 +28,7 @@ const TargetAudience = () => {
               onMouseEnter={() => setZoom([1.2, 1, 1])}
               onMouseLeave={() => setZoom([1, 1, 1])}
             >
-              <div className="columnTitle">College Fests</div>
+              <div className="columnTitle">Event Gathering</div>
             </div>
             <img style={eventStyles} src={eventGathering} width="100%" />
           </div>
@@ -51,7 +51,7 @@ const TargetAudience = () => {
               onMouseEnter={() => setZoom([1, 1, 1.2])}
               onMouseLeave={() => setZoom([1, 1, 1])}
             >
-              <div className="columnTitle">College Fests</div>
+              <div className="columnTitle">Traditional Wear</div>
             </div>
             <img style={traditionalStyles} src={traditionalWear} width="100%" />
           </div>
