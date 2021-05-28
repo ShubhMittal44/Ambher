@@ -49,6 +49,7 @@
     flex-direction: column;
     height: 100%;
     padding: 20px;
+    width: 100%;
   }
   .carousel {
     height: 60%;
@@ -64,6 +65,7 @@
     flex-direction: column;
     height: 100%;
     padding: 20px;
+    width: 100%;
   }
   .priceDetails {
     flex-direction: column;
