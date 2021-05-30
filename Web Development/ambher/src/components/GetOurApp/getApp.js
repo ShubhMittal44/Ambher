@@ -16,18 +16,17 @@ const GetOurApp = () => {
         <img src={Astore}></img>
         <img src={Pstore}></img>
       </div>
-      
       <div class="col-sm-1">
-        <img src={Phone} class="left"></img>
+        <img src={Phone} class="left" id="imgs"></img>
       </div>
       <div class="col-sm-3">
-        <img src={Phone} class="middle"></img>
+        <img src={Phone} class="middle" id="imgs"></img>
       </div>
       <div class="col-sm-1" >
-        <img src={Phone} class="right"></img>
+        <img src={Phone} class="right" id="imgs"></img>
+      </div>  
       </div>
-      </div> 
-    </div>
+    </div>    
   )
 }
 

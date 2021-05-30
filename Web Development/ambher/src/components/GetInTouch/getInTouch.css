@@ -1,10 +1,13 @@
 .container-fluid1{
     width: 100%;
-    height:100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
     
 }
 
 .col-sm-6{
+    padding-left: 0%;
     padding-top:15vh;
     text-align: left;
     float: left;
@@ -12,8 +15,6 @@
 }
 
 .Contact-img{
-    position:absolute;
-    left:0vh;
     height:70vh;
 }
 
@@ -21,6 +22,7 @@
     box-sizing: border-box;
     padding-right: 10vh;
     float: left;
+    min-width: 300px;
 }
 
 .row1 h1{
@@ -35,20 +37,10 @@
 }
 
 
-/*.contact-text input[type=text]{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 15px;
-
-}*/
 
 textarea{
     margin-top: 3vh;
-    height:20vh;
+    min-height:20vh;
     width:100%;
     border-radius: 5px;
 }
