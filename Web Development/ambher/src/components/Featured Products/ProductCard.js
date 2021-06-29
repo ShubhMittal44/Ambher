@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Featured Products/Featured.css'
 import productImage from '../../assets/images/Shoes.png'
+import CartModal from '../Add to cart modal/CartModal'
 
 const FeaturedCard = ({ cardTitle, cardPrice }) => {
+  const [clicked, setClicked] = useState(false)
+  function modalChange() {
+    setClicked(!clicked)
+  }
+
   return (
-    <div className="productCard">
+    <div className="productCard" onClick={modalChange}>
       <div
         className="productImage"
         style={{

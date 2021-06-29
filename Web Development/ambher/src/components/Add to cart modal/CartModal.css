@@ -1,4 +1,16 @@
+.modalPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(85, 85, 85, 0.774);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  z-index: 999;
+  padding: 20px;
+}
 .container {
+  background-color: white;
   border: 1px solid black;
   height: 60vh;
   width: 80%;
@@ -51,12 +63,27 @@
   align-items: center;
 }
 
+.btnDiv .primaryBtn {
+  padding: 10px 0px;
+  margin-top: 80px;
+}
+
+.btnDiv .primaryBtn h1 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
 @media (max-width: 1200px) {
   .container {
     flex-direction: column;
-    height: 100%;
+    height: 80%;
     padding: 20px;
-    width: 100%;
+    width: 80%;
+  }
+  .btnDiv {
   }
   .carousel {
     height: 80%;

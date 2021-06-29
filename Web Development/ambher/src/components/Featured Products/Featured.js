@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductRow from './ProductRow'
 import '../Featured Products/Featured.css'
 import PrimaryBtn from '../Primary Button/PrimaryBtn'

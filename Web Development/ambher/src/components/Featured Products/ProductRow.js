@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import CartModal from '../Add to cart modal/CartModal'
 import ProductCard from './ProductCard'
 
 const FeaturedRow = (props) => {
@@ -12,7 +13,11 @@ const FeaturedRow = (props) => {
       />
     )
   }
-  return <div className="productRow">{noOfCards}</div>
+  return (
+    <>
+      <div className="productRow">{noOfCards}</div>
+    </>
+  )
 }
 
 export default FeaturedRow
