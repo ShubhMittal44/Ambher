@@ -13,8 +13,8 @@ const Featured = (props) => {
     <div className="featuredSection">
       <h1 className="sectionTitle">{props.title}</h1>
       {noOfRows}
-      <PrimaryBtn text="View More" />
-      <CartModal />
+
+      {/* <CartModal /> */}
     </div>
   )
 }
