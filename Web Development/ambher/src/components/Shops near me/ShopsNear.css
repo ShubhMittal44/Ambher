@@ -1,0 +1,20 @@
+.shopsNearMe {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+.shopRows {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

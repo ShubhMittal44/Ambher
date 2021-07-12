@@ -3,7 +3,7 @@ import '../Featured Products/Featured.css'
 import productImage from '../../assets/images/Shoes.png'
 import CartModal from '../Add to cart modal/CartModal'
 
-const FeaturedCard = ({ cardTitle, cardPrice, cardDetails }) => {
+const ShopCard = ({ cardTitle, cardDetails }) => {
   const [clicked, setClicked] = useState(false)
   function modalChange() {
     setClicked(!clicked)
@@ -20,11 +20,10 @@ const FeaturedCard = ({ cardTitle, cardPrice, cardDetails }) => {
         }}
       />
       {/* <img className="productImage" src={productImage} /> */}
-      <p style={{ paddingTop: '10px' }}>{cardDetails}</p>
       <h1>{cardTitle}</h1>
-      <h3>Rs{cardPrice}</h3>
+      <p style={{ paddingBottom: '5px' }}>{cardDetails}</p>
     </div>
   )
 }
 
-export default FeaturedCard
+export default ShopCard

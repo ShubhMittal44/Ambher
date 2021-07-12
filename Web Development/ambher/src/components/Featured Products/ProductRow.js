@@ -9,6 +9,7 @@ const FeaturedRow = (props) => {
       <ProductCard
         className="productRowItem"
         cardTitle="Hello World"
+        cardDetails="Lorem Ipsum Dolor"
         cardPrice={200}
       />
     )
