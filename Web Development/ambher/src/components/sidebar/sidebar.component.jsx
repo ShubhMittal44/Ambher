@@ -3,6 +3,6 @@ import './sidebar.style.css';
 
 export const Sidebar = () => (
     <div className='sidebar-left'>
-        anasjasjasajsajsa
+        Hello World!!
     </div>
 )

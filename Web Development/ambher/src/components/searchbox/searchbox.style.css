@@ -1,23 +1,33 @@
 /* Overall div spanning across the page */
 .search-main {
     display: flex;
+    /* flex-direction: column; */
+    /* width: fit-content; */
     justify-content: center;
     position: relative;
     z-index: -1;
     top: 33%;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 70%);
     /* border: 1px solid red; */
 }
 /* Container div for 3 elements */
-.inner-search-box {
+.inner-search-box, .uppersearch {
     background: white;
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     border-radius: 5px;
-    margin: 10px;
+    /* margin: 10px; */
+}
+.uppersearch {
+    /* justify-content: space-evenly; */
+    width: 100%;
+    box-shadow: none;
+}
+.inner-search-box {
+    flex-direction: column;
 }
 .search-icon {
     cursor: unset;
@@ -27,6 +37,7 @@ input[type='text'] {
     padding: 1vw 5px;
     border: none;
     width: 30vw;
+    min-width: 200px;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -39,14 +50,14 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 22.1px;
+    padding: 22.2px;
     background: #ffc900;
     font-size: 18px;
     border: none;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /* border-bottom-right-radius: 5px; */
 }
 button:focus {
     outline: none !important;
@@ -55,7 +66,22 @@ button:focus {
     padding: 2px;
     margin: 2px;
 }
-
+.lowersearch {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.startdt {
+    border-right: 1px solid lightgray;
+}
+.startdt, .enddt {
+    width: 50%;
+    color: red;
+    /* border: 1px solid red; */
+    padding: 27px;
+    border-top: 1px solid lightgrey;
+    font-family: 'Montserrat', sans-serif;
+}
 /* ***************************************** */
 /* Media Queries */
 @media all and (max-width: 1366px) {
@@ -76,5 +102,32 @@ button:focus {
     button {
         padding: 15px 5px;
         font-size: 17px;
+    }
+    .startdt, .enddt {
+        padding: 10px 20px;
+    }
+}
+
+@media all and (max-width:375px) {
+    input[type='text'] {
+        font-size: 14px;
+        width: inherit;
+    }
+    .input-search {
+        width: 160px;
+    }
+    .inner-search-box {
+        width: 318px;
+        /* height: 50px; */
+    }
+    .uppersearch {
+        height: 50px;
+    }
+    button {
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+    .startdt, .enddt {
+        padding: 15px 5px;
     }
 }
