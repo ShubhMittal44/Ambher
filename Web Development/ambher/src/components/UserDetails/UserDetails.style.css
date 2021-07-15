@@ -1,0 +1,94 @@
+.account-information {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 75px;
+    left: 0px;
+    width: 100vw;
+    padding: 20px;
+}
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heading {
+    position: relative;
+    z-index: -99999;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#edit {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom {
+    position: relative;
+    z-index: -999;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+#user-details {
+    border: 1px solid red;
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    margin: 0px 10vw;
+}
+#user-dp img {
+    position: relative;
+    z-index: -999;
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    min-height: 133px;
+    min-width: 133px;
+    border-radius: 15px;
+}
+#user-details #left div, #user-details #right div {
+    text-align: left;
+    padding: 0px 20px;
+    margin: 10px 10px;
+}
+/* #left {
+    border: 1px solid red;
+}
+#right {
+    border: 1px solid red;
+} */
+
+.subhead {
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.subans {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 200;
+}
+#user-details>#left>div, #user-details>#right>div{
+    margin-bottom: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:1090px) {
+    #user-details {
+        flex-direction: column;
+    }
+}
+@media all and (max-width:685px) {
+    #bottom {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+}
