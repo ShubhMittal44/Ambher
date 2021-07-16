@@ -9,8 +9,16 @@
   justify-content: space-evenly;
 }
 
+.sizes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
 .topLeft {
-  min-width: 50%;
+  min-width: 40%;
   height: 100%;
 }
 
@@ -29,6 +37,16 @@
   display: grid;
   grid-gap: 5%;
   grid-template-columns: auto auto auto;
+}
+
+.bottomButtons {
+  margin: auto;
+  width: 20%;
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 table {
@@ -50,11 +68,17 @@ td {
   .topRight {
     width: 100%;
   }
+  .bottomButtons {
+    width: 40%;
+  }
 }
 
 @media (max-width: 500px) {
   .top {
     flex-direction: column;
+  }
+  .bottomButtons {
+    width: 80%;
   }
   table {
     display: flex;
