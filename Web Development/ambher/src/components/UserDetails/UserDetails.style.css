@@ -103,7 +103,7 @@ span {
     margin: 20px;
     /* justify-content: flex-start; */
 }
-button {
+#change-pass-btn button {
     /* border: 1px solid red; */
     height: 40px;
     /* margin: auto; */
@@ -136,16 +136,13 @@ button {
         height: 160px;
         width: 160px;
     }
-    button {
-        margin: auto;
-    }
     #user-details>#left>div, #user-details>#right>div{
         margin-bottom: 0px;
     }
     #user-details #left div, #user-details #right div {
         margin: 10px 0px;
     }
-    button {
+    #change-pass-btn button {
         margin: 20px auto;
     }
     .subans {

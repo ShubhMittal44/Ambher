@@ -45,7 +45,7 @@ export const UserDetails = props => {
                       <div className="subans">+91 1234567890</div>
                   </div>
                   <div id="change-pass-btn">
-                    <button type='button' onclick="">Change Password</button>
+                    <button id='btn-chg' type='button' onclick="">Change Password</button>
                   </div>
               </div>
           </div>
