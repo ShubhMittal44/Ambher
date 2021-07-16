@@ -1,5 +1,6 @@
 import React from "react";
 import EditIcon from "@material-ui/icons/Edit";
+import WarningIcon from '@material-ui/icons/Warning';
 import "./UserDetails.style.css";
 
 export const UserDetails = props => {
@@ -36,12 +37,15 @@ export const UserDetails = props => {
               </div>
               <div id="right">
                   <div id="user-email">
-                      <div className="subhead">Email-ID</div>
+                      <div className="subhead">Email-ID <span><WarningIcon style={{ fontSize: 15 }} /><span className='vertext'>Verify</span></span></div>
                       <div className="subans">marcusspencer@gmail.com</div>
                   </div>
                   <div id="user-phone">
-                      <div className="subhead">Phone</div>
+                      <div className="subhead">Phone <span><WarningIcon style={{ fontSize: 15 }} /><span className='vertext'>Verify</span></span></div>
                       <div className="subans">+91 1234567890</div>
+                  </div>
+                  <div id="change-pass-btn">
+                    <button type='button' onclick="">Change Password</button>
                   </div>
               </div>
           </div>

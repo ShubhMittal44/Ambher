@@ -1,6 +1,7 @@
 import React from "react";
 import CommonNav from "../commonNav/CommonNav.component";
 import { UserDetails } from "../UserDetails/UserDetails.component";
+import { BillingAddress } from "../BillingAddress/BillingAddress.component";
 
 function Profile() {
   const data = [
@@ -27,6 +28,7 @@ function Profile() {
     <React.Fragment>
       <CommonNav info={data} />
       <UserDetails info={data} />
+      <BillingAddress info={data} />
     </React.Fragment>
   );
 }
