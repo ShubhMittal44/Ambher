@@ -71,7 +71,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    font-family: 200;
+    font-weight: 400;
     /* border: 1px solid red; */
 }
 #user-details>#left>div, #user-details>#right>div{
@@ -111,9 +111,9 @@ button {
     border-radius: 5px;
     font-weight: 600;
 }
-#right {
+/* #right {
     border: 1px solid red;
-}
+} */
 /* MEDIA QUERIES */
 
 @media all and (max-width:1090px) {
@@ -144,6 +144,12 @@ button {
     }
     #user-details #left div, #user-details #right div {
         margin: 10px 0px;
+    }
+    button {
+        margin: 20px auto;
+    }
+    .subans {
+        font-weight: 300;
     }
 }
 
