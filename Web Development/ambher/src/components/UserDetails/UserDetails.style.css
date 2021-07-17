@@ -1,4 +1,6 @@
 .account-information {
+    display: block;
+    max-height: fit-content;
     /* border: 1px solid red; */
     position: relative;
     top: 75px;
@@ -150,8 +152,8 @@ span {
     }
 }
 
-@media all and(max-width:425px) {
+@media all and (max-width:425px) {
     #heading {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
