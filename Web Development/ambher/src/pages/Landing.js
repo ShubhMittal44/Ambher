@@ -1,6 +1,7 @@
 import React from 'react'
 import GetOurApp from '../components/GetOurApp/getApp.js'
 import GetTouch from '../components/GetInTouch/getInTouch.js'
+import FooterContainer from '../components/Footer/footerCont.js'
 
 const Landing = () => {
   return (
@@ -11,7 +12,7 @@ const Landing = () => {
       <h2>hello</h2>
       <GetOurApp />
       <GetTouch />
-      <h2>hello</h2>
+      <FooterContainer />
     </div>
   )
 }

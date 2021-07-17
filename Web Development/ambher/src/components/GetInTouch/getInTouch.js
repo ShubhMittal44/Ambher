@@ -8,9 +8,9 @@ const GetInTouch = () => {
     <div className="container-fluid1">
       <div class="row1">
         <div class="col-sm-6">
-          <img src={CircPic} class="Contact-img"></img>
+          <img src={CircPic} class="Contact-img" ></img>
         </div>
-
+        
         <div class="col-sm-6">
           <div class="contact-text">
           <h1>Get In Touch</h1>

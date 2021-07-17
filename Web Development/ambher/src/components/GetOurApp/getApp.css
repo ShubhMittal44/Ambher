@@ -8,7 +8,9 @@
     height:75vh;
     background-color: #FFD22B;
     box-sizing: border-box;
-    overflow:auto;    
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;    
     
 }
 
