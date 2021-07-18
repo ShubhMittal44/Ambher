@@ -4,11 +4,9 @@
     padding: 10px 10px;
     margin: 20px;
     padding: 5px;
-    /* border: 1px solid red; */
 }
 .inner-ham {
     cursor: pointer;
-    /* border: 1px solid red; */
     height: fit-content;
     width: fit-content;
     position: relative;
@@ -21,7 +19,6 @@
     width: 40px;
     margin: 10px 5px;
     transition: 0.5s all ease-in-out;
-    /* border: 1px solid red; */
 }
 /* managing position after click */
 .rot-up {
@@ -36,7 +33,6 @@
 }
 /* managing movement of sidebar after click */
 #sidebar-control {
-    /* background: black; */
     position: absolute;
     top: 0%;
     left: -400px;

@@ -1,7 +1,6 @@
 .account-information {
     display: block;
     max-height: fit-content;
-    /* border: 1px solid red; */
     position: relative;
     top: 75px;
     left: 0px;
@@ -33,15 +32,12 @@
 #bottom {
     position: relative;
     z-index: -999;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin: 55px 0px;
-    /* align-items: center; */
 }
 #user-details {
-    /* border: 1px solid red; */
     display: flex;
     font-size: 20px;
     flex-direction: row;
@@ -50,7 +46,6 @@
 #user-dp img {
     position: relative;
     z-index: -999;
-    /* padding: 10px; */
     margin: 10px;
     height: 250px;
     width: 250px;
@@ -76,7 +71,6 @@
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    /* border: 1px solid red; */
 }
 #user-details>#left>div, #user-details>#right>div{
     margin-bottom: 30px;
@@ -85,39 +79,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
-}
-#user-email>.subans, #user-phone>.subans {
-    /* margin-bottom: 0; */
 }
 span {
-    /* margin: 5px 20px 0px 50px; */
     color: #ffb400;
-    /* align-self: flex-start; */
     font-size: 14px;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 .vertext {
     padding: 10px 5px;
 }
 #change-pass-btn {
-    /* border: 1px solid red; */
-    /* width: fit-content; */
     padding: 0;
     margin: 20px;
-    /* justify-content: center; */
 }
 #change-pass-btn button {
-    /* border: 1px solid red; */
     height: 40px;
     margin: auto;
-    /* width: fit-content; */
     border-radius: 5px;
     font-weight: 600;
 }
-/* #right {
-    border: 1px solid red;
-} */
+
 /* MEDIA QUERIES */
 
 @media all and (max-width:1090px) {
