@@ -5,7 +5,7 @@ import { BillingAddress } from "../BillingAddress/BillingAddress.component";
 
 function Profile() {
   const data = {
-    dp: "https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    dp: "https://www.unigreet.com/wp-content/uploads/2020/12/smiley-dp.jpg",
     name: "Test Name",
     email: "dummy@gmail.com",
     location: "Bangalore",

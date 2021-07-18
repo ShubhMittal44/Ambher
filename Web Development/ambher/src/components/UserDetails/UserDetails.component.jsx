@@ -15,7 +15,7 @@ export const UserDetails = props => {
       <div id="bottom">
           <div id="user-dp">
               <img
-                src="https://images.pexels.com/photos/2693208/pexels-photo-2693208.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src={props.info.dp}
                 alt="userDP"
             />
           </div>
