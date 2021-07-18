@@ -128,6 +128,9 @@ span {
     }
 }
 @media all and (max-width:768px) {
+    .account-information {
+        padding: 20px;
+    }
     #heading {
         font-size: 36px;
     }
