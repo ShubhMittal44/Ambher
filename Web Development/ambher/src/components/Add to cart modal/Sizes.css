@@ -15,6 +15,7 @@
 }
 
 .sizeContainerActive {
+  margin: auto;
   background-color: #aaaaaa;
   border: 1px solid #aaaaaa;
   border-radius: 50%;

@@ -6,28 +6,40 @@ import {
   createTheme,
   Button,
 } from '@material-ui/core'
-import { orange } from '@material-ui/core/colors'
+import { white } from '@material-ui/core/colors'
 import React from 'react'
 import Sizes from './Sizes'
 import Slideshow from './Slideshow'
 import './CartModal2.css'
 import PrimaryBtn from '../Primary Button/PrimaryBtn'
-import { BsFillBookmarkFill } from 'react-icons/bs'
+import { BsFillBookmarkFill, BsPlus } from 'react-icons/bs'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const theme = createTheme({
   palette: {
     primary: {
       main: '#ffc900',
     },
-    secondary: orange,
+    secondary: {
+      main: '#ffffff',
+      light: '#000000',
+    },
   },
 })
 
 const CartModal2 = () => {
   return (
-    <>
+    <div className="modalBody">
       <ThemeProvider theme={theme}>
         <div className="modalContainer">
+          <Button
+            variant="contained"
+            color="secondary"
+            size="large"
+            endIcon={<AiOutlineClose />}
+            disableElevation
+            style={{ marginTop: '10px', width: 'auto' }}
+          ></Button>
           <div className="top">
             <div className="topLeft">
               <Slideshow />
@@ -67,6 +79,7 @@ const CartModal2 = () => {
                       />
                     </td>
                   </tr>
+
                   <tr>
                     <td>Start Date</td>
                     <td>End Date</td>
@@ -76,6 +89,9 @@ const CartModal2 = () => {
                       <TextField
                         id="date"
                         type="date"
+                        margin="dense"
+                        size="small"
+                        width="0.2"
                         variant="outlined"
                         placeholder="1"
                       />
@@ -84,6 +100,8 @@ const CartModal2 = () => {
                       <TextField
                         id="date"
                         type="date"
+                        size="small"
+                        width="0.2"
                         variant="outlined"
                         placeholder="1"
                       />
@@ -137,20 +155,28 @@ const CartModal2 = () => {
             </div>
           </div>
           <div className="bottomButtons">
-            <h5 style={{ padding: '2% 0%', fontWeight: '400' }}>
+            <Button
+              variant="outlined"
+              color="secindary dark"
+              size="large"
+              disableElevation
+              startIcon={<BsPlus />}
+              style={{ marginTop: '10px', width: 'auto' }}
+            >
               Add Measurements
-            </h5>
+            </Button>
             <Button
               variant="contained"
               color="primary"
               size="large"
               disableElevation
+              style={{ marginTop: '10px', width: 'auto' }}
             >
               Add to Cart
             </Button>
             <Button
               variant="contained"
-              color="default"
+              color="secondary"
               size="large"
               disableElevation
               startIcon={<BsFillBookmarkFill />}
@@ -161,7 +187,7 @@ const CartModal2 = () => {
           </div>
         </div>
       </ThemeProvider>
-    </>
+    </div>
   )
 }
 
